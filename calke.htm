@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<script>
+    const num1=parseFloat(prompt("Enter the first number"));
+    const num2=parseFloat(prompt("Enter the Second number"));
+    const operator=prompt("Enter the first number:+, *, /,- : ''"); 
+    let result= 0;
+    if(isNaN(num1) || isNaN(num2)){
+       alert("Enter an exisiting number therefore, refresh and start again.");  
+    }
+    else{
+        if (operator=='+'){
+         result=num1+num2;   
+        }
+        else if(operator=='-'){
+            result=num1-num2;
+        }
+        else if (operator=='/'){
+            result=num1/num2;
+        }
+        else if(operator=='*'){
+            result= num1 * num2;
+        }
+alert("the answer is :"  + num1 + operator + num2 +'='+result);
+    }
+
+</script>
+<body>
+    <h1>Refreash to continue</h1>
+</body>
+</html>
